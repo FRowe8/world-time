@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const props = defineProps<{
-  name: string;
-}>();
+  name: string
+}>()
 
-const uppercase = computed(() => props.name.toLocaleUpperCase());
+const uppercase = computed(() => props.name.toLocaleUpperCase())
 </script>
 
 <template>
