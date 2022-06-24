@@ -1,7 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <Hello name="Frank" />
+  <div border="~ gray/20" m2>
+    <ActionBar />
+    <TimeSchedular />
+  </div>
 </template>
 
 <style>
