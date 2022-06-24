@@ -8,10 +8,12 @@ import { presetAttributify, presetIcons, presetUno } from 'unocss'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    Vue(),
+    Vue({
+      reactivityTransform: true,
+    }),
     Components(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue', 'vue/macros'],
       dirs: ['./src/composables'],
       vueTemplate: true,
     }),

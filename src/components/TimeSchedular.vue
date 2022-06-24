@@ -2,6 +2,6 @@
 
 <template>
   <div>
-    <pre>    {{ zones }}  </pre>
+    <pre>{{ zones }}</pre>
   </div>
 </template>
