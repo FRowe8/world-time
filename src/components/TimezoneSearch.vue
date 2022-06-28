@@ -21,10 +21,12 @@ function add(t: Timezone) {
 }
 
 function onKeyDown(e: KeyboardEvent) {
-  if (e.key === 'ArrowDown') index = (index + 1) % searchResult.length
+  if (e.key === 'ArrowDown')
+    index = (index + 1) % searchResult.length
   else if (e.key === 'ArrowUp')
     index = (index - 1 + searchResult.length) % searchResult.length
-  else if (e.key === 'Enter') add(searchResult[index].item)
+  else if (e.key === 'Enter')
+    add(searchResult[index].item)
 }
 </script>
 
@@ -40,7 +42,7 @@ function onKeyDown(e: KeyboardEvent) {
       bg-transparent
       w-full
       @keydown="onKeyDown"
-    />
+    >
     <div
       v-show="input"
       absolute

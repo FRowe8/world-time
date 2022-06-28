@@ -6,7 +6,7 @@ import NavBar from './components/NavBar.vue'
 <template>
   <div font-sans bg-canvas h-screen>
     <NavBar />
-    <div border="~ base rounded" bg-base shadow m2>
+    <div border="~ base rounded" bg-base shadow mx8>
       <ActionBar />
       <TimeSchedular />
     </div>
